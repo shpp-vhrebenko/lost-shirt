@@ -131,15 +131,15 @@ ul > li {
 }
 
 .fade-slider__item--style-thirts {
-  background-image: url("/images/content/hero/slider_pic_1.png") ;  
+  background-image: url("./images/content/hero/slider_pic_1.png") ;  
 }
 
 .fade-slider__item--style-games {
-  background-image: url("/images/content/hero/slider_pic_2.png");  
+  background-image: url("./images/content/hero/slider_pic_2.png");  
 }
 
 .fade-slider__item--style-presents {
-  background-image: url("/images/content/hero/slider_pic_3.png");  
+  background-image: url("./images/content/hero/slider_pic_3.png");  
 }
 
 .fade-slider__item--style-thirts .fade-slider__text {  
