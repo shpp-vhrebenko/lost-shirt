@@ -75,21 +75,21 @@
       <div class="container product__container">
         <ul class="description-tab">
           <li class="description-tab__item description-tab__item--active">
-            <a class="description-tab__link" href="">Описание</a>
+            <a class="description-tab__link" data-tab="js_descProduct" href="#">Описание</a>
           </li>
           <li class="description-tab__item">
-            <a class="description-tab__link" href="">Таблица размеров</a>
+            <a class="description-tab__link" data-tab="js_sizeTable" href="#">Таблица размеров</a>
           </li> 
           <li class="description-tab__item">
-            <a class="description-tab__link" href="">Условия доставки</a>
+            <a class="description-tab__link" data-tab="js_delivery" href="#">Условия доставки</a>
           </li> 
           <li class="description-tab__item">
-            <a class="description-tab__link" href="">о бренде</a>
+            <a class="description-tab__link" data-tab="js_brand" href="#">о бренде</a>
           </li>         
         </ul>
         <div class="description__content">
           <ul class="description-list">
-            <li class="description-list__item">
+            <li class="description-list__item js_descProduct description-list__item-type--active">
               <div class="description-list__view">
                 <ul class="service-list">
                   <li class="service-list__item">
@@ -123,15 +123,14 @@
                     </svg> 
                     <p>Не сушить в барабане</p>
                   </li>
-                </ul>
-                
+                </ul>               
               </div>
               <div class="description-list__text">
                 <p>Футболка из приятной ткани с качественным принтом, это одна из самых универсальных вещей 
                   в гардеробе. Она подойдет и для занятий спортом, и для прогулок, и для работы, если разрешен свободный дресс-код.</p>
               </div>
             </li>  
-            <li class="description-list__item">
+            <li class="description-list__item js_brand">
               <div class="description-list__view">
                 <img src="./images/content/logos/harley.png" alt="harley logo">
               </div>
@@ -141,7 +140,7 @@
                   в свободу.</p>
               </div>
             </li>
-            <li class="description-list__item">
+            <li class="description-list__item js_delivery">
               <div class="description-list__view">
                 <img src="./images/content/logos/express.png" alt="harley logo">
               </div>
@@ -151,14 +150,123 @@
                 <p>(Цена приведена для ориентира и может отличаться в зависимости от дальности и веса посылки)</p>                    
               </div>
             </li>
-            <li class="description-list__item">
+            <li class="description-list__item js_sizeTable">
               <div class="description-list__view">
                 <img src="./images/tshirts/tshirt_00.png" alt="harley logo">
+                <p>
+                  1.Измерьте ширину, см. 
+                  (от подмышки до подмышки)
+                </p>
+                <p>
+                  2.Измерьте длину, см. 
+                  (от верхней точки плеча до низа)
+                </p>
+                <p>
+                  3.Сверьте данные с таблицей
+                </p>
               </div>
-              <div class="description-list__text">
-                <p>Доставка по России и странам Ближнего Зарубежья (Украина, Белорусия, Молдавия, Польша, Эстония, Болгария, Румыния, Чехия, Словакия, Венгрия и т.д.), всего 400 руб.</p>
-                <p>Мы так же доставляем в США, Японию, Австралию, Англию, Италию, Испанию и т.д. , стоимость доставки около 600 руб.</p>
-                <p>(Цена приведена для ориентира и может отличаться в зависимости от дальности и веса посылки)</p>                    
+              <div class="description-list__table">
+                <table class="table-size">
+                  <tr class="table-size__header">
+                    <th>Мужские</th> 
+                    <th></th>
+                    <th>XS</th> 
+                    <th>S</th> 
+                    <th>M</th> 
+                    <th>L</th> 
+                    <th>XL</th> 
+                    <th>2XL</th> 
+                    <th>3XL</th>                     
+                  </tr>
+                  <tr>
+                    <td>Размер RUS</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                  
+                  </tr>
+                  <tr>
+                    <td>Ширина, см</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                    
+                  </tr>
+                  <tr>
+                    <td>Длина, см</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                    
+                  </tr>
+                  <tr class="table-size__header">
+                    <th>Женские</th> 
+                    <th>XXS</th>
+                    <th>XS</th> 
+                    <th>S</th> 
+                    <th>M</th> 
+                    <th>L</th> 
+                    <th>XL</th> 
+                    <th>2XL</th> 
+                    <th>3XL</th>                    
+                  </tr>
+                  <tr>
+                    <td>Размер RUS</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                     
+                  </tr>
+                  <tr>
+                    <td>Ширина, см</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                    
+                  </tr>
+                  <tr>
+                    <td>Длина, см</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                  
+                  </tr>
+                  <tr>
+                    <td>Обхват груди, см</td> 
+                    <td></td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>
+                    <td>44</td>                   
+                  </tr>
+                </table>                 
               </div>
             </li>              
           </ul>
